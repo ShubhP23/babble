@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:babble/constants.dart';
+import 'package:babble/components/rounded_button.dart';
 
 class LogInScreen extends StatefulWidget {
   static const String id = 'logInScreen';
@@ -28,9 +29,22 @@ class _LogInScreenState extends State<LogInScreen> {
               height: 15.0,
             ),
             TextField(
+              keyboardType: TextInputType.emailAddress,
               onChanged: (value) {},
-              decoration: kTextFieldDecoration,
+              decoration: kTextFieldDecoration.copyWith(hintText: 'Email'),
             ),
+            SizedBox(
+              height: 15.0,
+            ),
+            TextField(
+              obscureText: true,
+              onChanged: (value) {},
+              decoration: kTextFieldDecoration.copyWith(hintText: 'Password'),
+            ),
+            SizedBox(
+              height: 15.0,
+            ),
+            RoundedButton(title: 'Log In', onpress: () {})
           ],
         ),
       ),
