@@ -1,7 +1,10 @@
+import 'package:babble/screens/log_in.dart';
+import 'package:babble/screens/register.dart';
 import 'package:flutter/material.dart';
 import 'package:babble/components/rounded_button.dart';
 
 class WelcomeScreen extends StatefulWidget {
+  static const String id = 'welcomeScreen';
   @override
   _WelcomeScreenState createState() => _WelcomeScreenState();
 }
@@ -31,8 +34,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 padding: EdgeInsets.symmetric(vertical: 15.0),
                 child: RoundedButton(
                   colour: Colors.blueGrey[50],
-                  text: 'Log In',
+                  title: 'Log In',
                   textColour: Colors.black,
+                  onpress: () {
+                    Navigator.pushNamed(context, LogInScreen.id);
+                  },
                 ),
               ),
               SizedBox(
@@ -42,8 +48,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 padding: EdgeInsets.symmetric(vertical: 15.0),
                 child: RoundedButton(
                   colour: Colors.grey,
-                  text: 'Register',
+                  title: 'Register',
                   textColour: Colors.white,
+                  onpress: () {
+                    Navigator.pushNamed(context, RegisterScreen.id);
+                  },
                 ),
               ),
             ],

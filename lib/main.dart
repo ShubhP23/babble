@@ -1,3 +1,5 @@
+import 'package:babble/screens/log_in.dart';
+import 'package:babble/screens/register.dart';
 import 'package:flutter/material.dart';
 import 'screens/welcome_screen.dart';
 
@@ -16,7 +18,12 @@ class Babble extends StatelessWidget {
           ),
         ),
       ),
-      home: WelcomeScreen(),
+      initialRoute: WelcomeScreen.id,
+      routes: {
+        WelcomeScreen.id: (context) => WelcomeScreen(),
+        LogInScreen.id: (context) => LogInScreen(),
+        RegisterScreen.id: (context) => RegisterScreen(),
+      },
     );
   }
 }
