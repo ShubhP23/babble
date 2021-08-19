@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:babble/constants.dart';
 
 class LogInScreen extends StatefulWidget {
   static const String id = 'logInScreen';
@@ -28,9 +29,7 @@ class _LogInScreenState extends State<LogInScreen> {
             ),
             TextField(
               onChanged: (value) {},
-              decoration: InputDecoration(
-                hintText: 'Email',
-              ),
+              decoration: kTextFieldDecoration,
             ),
           ],
         ),
