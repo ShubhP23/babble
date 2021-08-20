@@ -19,7 +19,7 @@ class Babble extends StatelessWidget {
           ),
         ),
       ),
-      initialRoute: WelcomeScreen.id,
+      initialRoute: ChatScreen.id,
       routes: {
         WelcomeScreen.id: (context) => WelcomeScreen(),
         LogInScreen.id: (context) => LogInScreen(),

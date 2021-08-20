@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "564166461883",
+    "project_id": "babble-de4ea",
+    "storage_bucket": "babble-de4ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564166461883:android:d24114ff6eccc0aa1c5c9e",
+        "android_client_info": {
+          "package_name": "com.example.babble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564166461883-7643r9dlosd9h069shah0a5lp7d7tqke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANHXgG0AcJzvANszUhJQHi6zTzblceHeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564166461883-7643r9dlosd9h069shah0a5lp7d7tqke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
