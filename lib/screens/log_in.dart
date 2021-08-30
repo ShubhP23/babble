@@ -26,6 +26,16 @@ class _LogInScreenState extends State<LogInScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Hero(
+              tag: 'splash',
+              child: Container(
+                height: 110.0,
+                child: Image.asset('assets/splashScreen1.png'),
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
             Text(
               'Babble',
               style: TextStyle(

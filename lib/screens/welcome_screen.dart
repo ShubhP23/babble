@@ -19,6 +19,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            Hero(
+              tag: 'splash',
+              child: Container(
+                height: 150.0,
+                child: Image.asset('assets/splashScreen1.png'),
+              ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
             Text(
               'Babble',
               style: TextStyle(
